@@ -365,7 +365,7 @@ void RenderFrame()
     {
       for (int t = 0; t < 256; t++)
       {
-        strip.setPixelColor(t, eye_left[t]); 
+        strip.setPixelColor(t, eye_Left[t]); 
       }
     
       strip.show();
