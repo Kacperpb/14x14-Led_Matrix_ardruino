@@ -1,7 +1,11 @@
 #include <Adafruit_NeoPixel.h>
-
+//--------------------------------------------------------------------------
+//setings
 #define PIN D8
-
+#define BRIGHTNESS 128
+#define TIME 500 //time to spend to change frames
+//---------------------------------------------------------------------------
+//variables
 long eye_Left[] = {
                    0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, //otwarte oczy lewo
                    0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 0x00505050, 
@@ -341,11 +345,13 @@ long sword[] = {
 int W = 1;
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(256, PIN, NEO_GRB + NEO_KHZ800);
-
+//-------------------------------------------------------------------------
+//setup
 void setup()
 {
     strip.begin();
     strip.show(); 
+    strip.setBrightness(BRIGHTNESS);
 
     RenderFrame();
 }
@@ -354,7 +360,8 @@ void loop()
 {
 
 }
-
+//------------------------------------------------------------------------
+//show pictures
 void RenderFrame()
 {
   while(true)
@@ -369,7 +376,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 2)
@@ -380,7 +387,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 3)
@@ -391,7 +398,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if (W == 4)
@@ -402,7 +409,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 5)
@@ -413,7 +420,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 6)
@@ -424,7 +431,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 7)
@@ -435,7 +442,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 8)
@@ -446,7 +453,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 9)
@@ -457,7 +464,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 10)
@@ -468,7 +475,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if (W == 11)
@@ -479,7 +486,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 12)
@@ -490,7 +497,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 13)
@@ -501,7 +508,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 14)
@@ -512,7 +519,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 15)
@@ -523,7 +530,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 16)
@@ -534,7 +541,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 17)
@@ -545,7 +552,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 18)
@@ -556,7 +563,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 19)
@@ -567,7 +574,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else if(W == 20)
@@ -578,7 +585,7 @@ void RenderFrame()
       }
     
       strip.show();
-      delay(1000);
+      delay(TIME);
       W++;
     }
     else
